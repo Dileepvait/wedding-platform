@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff8ef;
+  color: #2a1712;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 50;
+  background: rgba(63, 22, 15, 0.75);
+  backdrop-filter: blur(14px);
+}
+
+.logo {
+  color: #fff1d1;
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header-btn {
+  text-decoration: none;
+  background: #d8a441;
+  color: #2a1712;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+.landing-hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(30, 10, 5, 0.3), rgba(30, 10, 5, 0.65)),
+    url("https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 120px 7% 80px;
+}
+
+.hero-content {
+  max-width: 760px;
+  color: #fff;
+}
+
+.eyebrow {
+  color: #ffd98a;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-size: 13px;
+}
+
+.hero-content h1 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 36px;
+  max-width: 620px;
+}
+
+.primary-btn,
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #f8d98b, #c98a28);
+  color: #2a1712;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+}
+
+.featured-section {
+  padding: 90px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-title p {
+  color: #a45c28;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.section-title h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(46px, 7vw, 76px);
+  color: #6b2418;
+}
+
+.featured-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid #f1d7b5;
+  box-shadow: 0 25px 80px rgba(93, 39, 20, 0.14);
+}
+
+.featured-image {
+  min-height: 440px;
+  background:
+    linear-gradient(rgba(80, 25, 15, 0.15), rgba(80, 25, 15, 0.2)),
+    url("./couples/dileep-shashikala/assets/couple.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-content {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small-title {
+  color: #a45c28;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.featured-content h3 {
+  font-family: "Cinzel", serif;
+  font-size: 38px;
+  color: #5b1c14;
+  margin-bottom: 18px;
+}
+
+.featured-content p {
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.card-btn {
+  margin-top: 25px;
+  width: max-content;
+}
+
+footer {
+  background: #3b130e;
+  color: #ffe6bd;
+  text-align: center;
+  padding: 26px;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .header-btn {
+    padding: 9px 14px;
+    font-size: 13px;
+  }
+
+  .featured-card {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-content {
+    padding: 36px 24px;
+  }
+
+  .featured-image {
+    min-height: 320px;
+  }
+}
