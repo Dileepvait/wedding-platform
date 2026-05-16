@@ -445,6 +445,70 @@ nav a:last-child:hover{
   gap:18px;
   flex-wrap:wrap;
 }
+.restaurant-title {
+  margin-top: 110px;
+}
+
+.restaurant-project {
+  margin-top: 10px;
+}
+
+.restaurant-image img {
+  border-radius: 0;
+}
+.featured-project {
+  width: 100%;
+}
+
+.restaurant-featured {
+  margin-top: 0;
+  padding: 70px 0 20px;
+  background:
+    radial-gradient(circle at 70% 30%, rgba(212,163,73,0.08), transparent 35%),
+    linear-gradient(180deg, #090909, #0f0f0f);
+}
+.restaurant-layout {
+  grid-template-columns: 1fr 1fr;
+}
+
+.restaurant-featured .project-box {
+  display: grid;
+}
+.projects {
+  background: #050505;
+}
+
+.project-divider {
+  max-width: 1200px;
+  margin: 100px auto;
+  height: 1px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212,163,73,0.75),
+    transparent
+  );
+  box-shadow: 0 0 25px rgba(212,163,73,0.35);
+}
+
+.project-divider span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #050505;
+  color: #d4a349;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(212,163,73,0.35);
+  box-shadow: 0 0 28px rgba(212,163,73,0.25);
+}
+
+
 
 /* =========================
    GALLERY
@@ -537,6 +601,34 @@ footer{
   .project-box,
   .gallery-grid{
     grid-template-columns:1fr;
+  }
+.restaurant-title {
+    margin-top: 80px;
+  }
+   .restaurant-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-project .project-image,
+  .restaurant-project .project-content {
+    order: initial;
+  }
+    .restaurant-layout .project-content {
+    order: 2;
+  }
+
+  .restaurant-layout .project-image {
+    order: 1;
+  }
+
+.restaurant-image img {
+  border-radius: 0;
+}
+.restaurant-featured {
+    margin-top: 80px;
+  }
+  .project-divider {
+    margin: 75px auto;
   }
 }
 
