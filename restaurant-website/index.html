@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Spice Restaurant</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">Royal<span>Spice</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#booking" class="nav-btn">Book Table</a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-small">Premium Dining Experience</span>
+      <h1>Experience Luxury Dining</h1>
+      <p>
+        Enjoy delicious food, elegant interiors, family dining, and unforgettable moments at Royal Spice Restaurant.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#booking" class="primary-btn">Book a Table</a>
+        <a href="#menu" class="secondary-btn">View Menu</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-card">
+        <img src="images/hero-food.jpg" alt="Premium restaurant dish">
+      </div>
+
+      <div class="floating-card">
+        <span>Chef Special</span>
+        <strong>Fine Dining</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="about section" id="about">
+    <div class="section-heading">
+      <span>About Us</span>
+      <h2>Where Every Meal Feels Special</h2>
+      <p>We bring together fresh ingredients, premium service, and a warm dining atmosphere for families, couples, and food lovers.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Fresh Ingredients</h3>
+        <p>Every dish is prepared with carefully selected ingredients and rich flavours.</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Luxury Ambience</h3>
+        <p>A peaceful and premium dining space perfect for celebrations and dinners.</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Fast Service</h3>
+        <p>Enjoy smooth table booking, quick ordering, and friendly customer support.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="menu-section section" id="menu">
+  <div class="section-heading">
+    <span>Our Menu</span>
+    <h2>Popular Food Categories</h2>
+    <p>Explore our most loved dishes with easy WhatsApp ordering.</p>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-image">
+        <span class="menu-badge">Chef Special</span>
+        <img src="images/Paneer-Tikka.jpg" alt="Paneer Tikka">
+      </div>
+
+      <div class="menu-card-content">
+        <h3>Paneer Tikka</h3>
+        <p>Spicy grilled paneer served with mint chutney.</p>
+        <strong>₹220</strong>
+        <a href="https://wa.me/919999999999?text=I want to order Paneer Tikka" target="_blank">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-card-image">
+        <span class="menu-badge">Best Seller</span>
+        <img src="images/Biryani.jpg" alt="Special Biryani">
+      </div>
+
+      <div class="menu-card-content">
+        <h3>Special Biryani</h3>
+        <p>Rich aromatic biryani cooked with premium spices.</p>
+        <strong>₹280</strong>
+        <a href="https://wa.me/919999999999?text=I want to order Special Biryani" target="_blank">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-card-image">
+        <span class="menu-badge">Most Loved</span>
+        <img src="images/Dessert.jpg" alt="Chocolate Dessert">
+      </div>
+
+      <div class="menu-card-content">
+        <h3>Chocolate Dessert</h3>
+        <p>Soft chocolate dessert with creamy topping.</p>
+        <strong>₹160</strong>
+        <a href="https://wa.me/919999999999?text=I want to order Chocolate Dessert" target="_blank">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="booking section" id="booking">
+    <div class="booking-box">
+      <div>
+        <span>Reserve Now</span>
+        <h2>Book Your Table</h2>
+        <p>Send your table booking request directly through WhatsApp.</p>
+      </div>
+
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <input type="number" id="guests" placeholder="Number of Guests" required>
+        <button type="submit">Book on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="gallery section" id="gallery">
+  <div class="section-heading">
+    <span>Gallery</span>
+    <h2>Restaurant Moments</h2>
+    <p>Beautiful ambience, premium food presentation, and memorable dining experiences.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <div class="gallery-item large">
+      <img src="images/Luxury-restaurant-interior.jpg" alt="Luxury restaurant interior">
+      <div class="gallery-overlay">
+        <span>Luxury Interior</span>
+      </div>
+    </div>
+
+    <div class="gallery-item wide">
+      <img src="images/Chef-plating-food.jpg" alt="Chef plating food">
+      <div class="gallery-overlay">
+        <span>Chef Plating</span>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Fine-dining-table-setup.jpg" alt="Fine dining table setup">
+      <div class="gallery-overlay">
+        <span>Fine Dining</span>
+      </div>
+    </div>
+
+    <div class="gallery-item tall">
+      <img src="images/Candle-light-dinner.jpg" alt="Candle light dinner">
+      <div class="gallery-overlay">
+        <span>Candle Dinner</span>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Food-closeup.jpg" alt="Food closeup">
+      <div class="gallery-overlay">
+        <span>Signature Taste</span>
+      </div>
+    </div>
+
+    <div class="gallery-item wide">
+      <img src="images/Restaurant-ambience-lighting.jpg" alt="Restaurant ambience lighting">
+      <div class="gallery-overlay">
+        <span>Warm Ambience</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-action">
+    <a href="#contact">Explore More Moments →</a>
+  </div>
+</section>
+
+ <section class="reviews section" id="reviews">
+  <div class="section-heading">
+    <span>Reviews</span>
+    <h2>What Customers Say</h2>
+    <p>Real dining experiences shared by our happy customers.</p>
+  </div>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-top">
+        <div class="stars">★★★★★</div>
+        <span class="google-badge">
+  <span class="google-g">G</span>
+  Google Review
+  <span class="verified-check">✓</span>
+</span>
+      </div>
+      <p>Beautiful ambience, tasty food, and very good service. Perfect place for a family dinner.</p>
+      <h4>Ramesh Kumar</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <div class="stars">★★★★★</div>
+       <span class="google-badge">
+  <span class="google-g">G</span>
+  Google Review
+  <span class="verified-check">✓</span>
+</span>
+      </div>
+      <p>The food quality was excellent and the table booking experience was very smooth.</p>
+      <h4>Priya Sharma</h4>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <div class="stars">★★★★★</div>
+        <span class="google-badge">
+  <span class="google-g">G</span>
+  Google Review
+  <span class="verified-check">✓</span>
+</span>
+      </div>
+      <p>Premium look, peaceful place, and delicious biryani. Highly recommended.</p>
+      <h4>Akash Gowda</h4>
+    </div>
+  </div>
+
+  <div class="review-actions">
+    <a href="https://www.google.com/search?q=Royal+Spice+Restaurant+reviews" target="_blank" class="review-btn primary-review">
+      See More Reviews on Google
+    </a>
+
+    <a href="https://www.google.com/search?q=Royal+Spice+Restaurant+write+a+review" target="_blank" class="review-btn secondary-review">
+      Write a Review on Google
+    </a>
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <div class="section-heading">
+    <span>Visit Us</span>
+    <h2>Location & Contact</h2>
+    <p>Reach us easily for table booking, food orders, and restaurant enquiries.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Royal Spice Restaurant</h3>
+
+      <p><strong>Address:</strong> MG Road, Bengaluru, Karnataka</p>
+      <p><strong>Phone:</strong> +91 99999 99999</p>
+      <p><strong>Email:</strong> royalspice@example.com</p>
+      <p><strong>Opening Hours:</strong> 11:00 AM – 11:00 PM</p>
+      <p><strong>Reservation:</strong> Available for lunch, dinner, and private celebrations.</p>
+
+      <a class="whatsapp-btn" href="https://wa.me/919999999999?text=Hi, I want to know more about your restaurant" target="_blank">
+        Contact on WhatsApp
+      </a>
+    </div>
+
+    <div class="map-card">
+      <span class="map-badge">Visit Our Restaurant</span>
+      <iframe
+        src="https://www.google.com/maps?q=Bengaluru&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <h2>Royal<span>Spice</span></h2>
+    <p>Premium restaurant website demo by Dileep Web Studio.</p>
+    <p>© 2026 Royal Spice Restaurant. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
