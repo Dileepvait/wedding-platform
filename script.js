@@ -16,6 +16,21 @@ window.addEventListener("scroll", () => {
 menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+function sendToWhatsApp() {
+
+  const message =
+    document.getElementById("userRequirement").value;
+
+  const phoneNumber = "919999999999";
+
+  const finalMessage =
+    `Hello Dileep Web Studio,%0A%0AWebsite Requirement:%0A${message}`;
+
+  window.open(
+    `https://wa.me/${phoneNumber}?text=${finalMessage}`,
+    "_blank"
+  );
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
