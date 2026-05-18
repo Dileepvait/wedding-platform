@@ -22,7 +22,7 @@ bookingForm.addEventListener("submit", function (e) {
   const time = document.getElementById("time").value;
   const guests = document.getElementById("guests").value;
 
-  const restaurantWhatsAppNumber = "919999999999";
+  const restaurantWhatsAppNumber = "917349753030";
 
   const message = `Hi, I want to book a table.%0A%0AName: ${name}%0APhone: ${phone}%0ADate: ${date}%0ATime: ${time}%0AGuests: ${guests}`;
 

@@ -183,7 +183,7 @@ img {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("./assets/hero.png") center/cover no-repeat;
+  background: url("./assets/hero.JPG") center/cover no-repeat;
   transform: scale(1.04);
   animation: zoomHero 20s ease-in-out infinite alternate;
   z-index: -5;
@@ -2258,7 +2258,7 @@ section {
   display: grid;
   place-items: center;
   padding: 110px 7% 120px;
-  background: url("./assets/hero.png") center/cover no-repeat;
+  background: url("./assets/hero.JPG") center/cover no-repeat;
   isolation: isolate;
 }
 
