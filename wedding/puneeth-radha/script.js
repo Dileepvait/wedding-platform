@@ -23,7 +23,7 @@ musicBtn.addEventListener("click", () => {
   }
 });
 
-const weddingDate = new Date("August 16, 2026 10:30:00").getTime();
+const weddingDate = new Date("December 11, 2026 10:30:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
