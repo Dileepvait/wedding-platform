@@ -712,6 +712,13 @@ footer{
   transform:translateX(6px);
   color:#111;
 }
+.logo-img{
+  width:46px;
+  height:46px;
+  object-fit:cover;
+  border-radius:14px;
+  box-shadow:0 12px 28px rgba(183,134,66,0.28);
+}
 
 
 /* TABLET */
@@ -769,6 +776,11 @@ footer{
 
  .navbar{
   overflow:visible;
+}
+.logo-img{
+  width:38px;
+  height:38px;
+  border-radius:11px;
 }
 
   .logo-icon{
