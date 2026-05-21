@@ -13,6 +13,8 @@ href="/common/assets/logo.png">
   <link rel="stylesheet" href="style.css" />
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d4a349">
 </head>
 <body>
 
@@ -406,5 +408,19 @@ Paste this after your Menu section and before Booking section
   </footer>
 
   <script src="script.js"></script>
+  <script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker
+        .register("./service-worker.js")
+        .then(() => {
+            console.log("Service Worker Registered");
+        })
+        .catch((error) => {
+            console.log("Registration failed:", error);
+        });
+    });
+}
+</script>
 </body>
 </html>
