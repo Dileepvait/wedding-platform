@@ -23,6 +23,7 @@ href="/common/assets/logo.png">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
@@ -145,6 +146,92 @@ href="/common/assets/logo.png">
     </div>
   </div>
 </section>
+
+<!-- =====================================================
+PREMIUM UNIQUE FEATURE SECTION
+Paste this after your Menu section and before Booking section
+===================================================== -->
+
+<button class="ambience-toggle" id="ambienceToggle">🌙 Night Dining</button>
+
+<section class="section signature-experience" id="experience">
+  <div class="steam steam-one"></div>
+  <div class="steam steam-two"></div>
+
+  <div class="section-heading">
+    <span>Signature Experience</span>
+    <h2>Discover What You Should Taste Today</h2>
+    <p>
+      A premium interactive dining experience with mood-based suggestions,
+      chef recommendations, ambience mode, and trending order highlights.
+    </p>
+  </div>
+
+  <div class="experience-grid">
+    <div class="mood-card">
+      <span class="feature-label">🍽️ Food Mood Selector</span>
+      <h3>What are you craving today?</h3>
+      <p>Select your mood and let the restaurant recommend the perfect dish experience.</p>
+
+      <div class="mood-buttons">
+        <button class="mood-btn" data-mood="romantic">❤️ Romantic Dinner</button>
+        <button class="mood-btn" data-mood="spicy">🌶️ Spicy Mood</button>
+        <button class="mood-btn" data-mood="family">👨‍👩‍👧 Family Treat</button>
+        <button class="mood-btn" data-mood="healthy">🥗 Healthy Choice</button>
+      </div>
+
+      <div class="mood-result" id="moodResult">
+        <strong>Your perfect dish is waiting</strong>
+        <p>Choose a mood above to reveal a chef-curated recommendation.</p>
+      </div>
+    </div>
+
+    <div class="wheel-card">
+      <span class="feature-label">👨‍🍳 Chef Recommendation Wheel</span>
+      <h3>Let the Chef Decide</h3>
+      <p>Tap the wheel and get a surprise recommendation from today’s special menu.</p>
+
+      <div class="wheel-wrap">
+        <div class="wheel-pointer"></div>
+        <div class="chef-wheel" id="chefWheel">
+          <span>Chef's Pick</span>
+        </div>
+      </div>
+
+      <button class="spin-btn" id="spinBtn">Spin Recommendation</button>
+      <div class="wheel-result" id="wheelResult">Spin to reveal today’s special.</div>
+    </div>
+
+    <div class="popular-card">
+      <span class="feature-label">🔥 Today’s Popular Orders</span>
+      <h3>Live-Style Trending Dishes</h3>
+      <p>Animated numbers create a premium live restaurant feeling for website visitors.</p>
+
+      <div class="popular-list">
+        <div class="popular-item">
+          <span>Signature Biryani</span>
+          <strong data-count="173">0</strong>
+        </div>
+
+        <div class="popular-item">
+          <span>Loaded Pizza</span>
+          <strong data-count="126">0</strong>
+        </div>
+
+        <div class="popular-item">
+          <span>Chef Pasta</span>
+          <strong data-count="98">0</strong>
+        </div>
+
+        <div class="popular-item">
+          <span>Mocktails</span>
+          <strong data-count="84">0</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <section class="booking section" id="booking">
     <div class="booking-box">
