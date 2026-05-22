@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velora Dining | Premium Restaurant Template</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">Velora<span>Dining</span></a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#booking">Book Table</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle">
+    ☀️
+</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="tag">Fine Dining • Fresh Taste • Premium Experience</span>
+      <h1>Where Every Bite Feels Like A Celebration</h1>
+      <p>
+        A luxurious restaurant website template crafted for cafés, restaurants,
+        cloud kitchens, and premium food brands.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#menu" class="btn primary">Explore Menu</a>
+        <a href="#booking" class="btn secondary">Book A Table</a>
+      </div>
+    </div>
+<a href="#booking" class="hero-badge">
+  <span></span>
+  Open Now • Book Your Table
+</a>
+    <div class="hero-card">
+      <h3>Today’s Special</h3>
+      <p>Wood-fired pasta with signature herb sauce</p>
+      <strong>₹349</strong>
+    </div>
+  </section>
+
+  <section class="about section">
+    <div class="section-title">
+      <span>Our Story</span>
+      <h2>A Taste Designed To Be Remembered</h2>
+      <p>
+        Beautifully designed restaurant experience with premium visuals,
+        smooth animations, and customer-focused booking features.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="images/interior.png" alt="Restaurant Interior">
+      </div>
+
+      <div class="about-content">
+        <h3>Elegant ambience, handcrafted food, and warm hospitality.</h3>
+        <p>
+          This template is perfect for restaurants who want a modern online
+          presence with menu display, WhatsApp orders, reservations, gallery,
+          reviews, and map integration.
+        </p>
+
+        <div class="stats">
+          <div>
+            <strong>25+</strong>
+            <span>Signature Dishes</span>
+          </div>
+          <div>
+            <strong>4.8★</strong>
+            <span>Customer Rating</span>
+          </div>
+          <div>
+            <strong>10k+</strong>
+            <span>Happy Guests</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="menu section" id="menu">
+  <div class="section-title">
+    <span>Popular Menu</span>
+    <h2>Signature Dishes</h2>
+    <p>Showcase your best food items with elegant menu cards.</p>
+  </div>
+
+  <div class="menu-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="starter">Starter</button>
+    <button class="filter-btn" data-filter="main">Main Course</button>
+    <button class="filter-btn" data-filter="dessert">Dessert</button>
+  </div>
+
+  <div class="menu-slider-wrap">
+    <button class="menu-arrow left" id="menuPrev">‹</button>
+
+    <div class="menu-grid" id="menuGrid">
+      <div class="menu-card" data-category="main">
+        <img src="images/food-1.png" alt="">
+        <div>
+          <h3>Royal Paneer Platter</h3>
+          <p>Rich creamy gravy with soft paneer and spices.</p>
+          <strong>₹299</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="main">
+        <img src="images/food-2.png" alt="">
+        <div>
+          <h3>Garden Fresh Pizza</h3>
+          <p>Loaded with fresh vegetables and premium cheese.</p>
+          <strong>₹399</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="dessert">
+        <img src="images/food-3.png" alt="">
+        <div>
+          <h3>Classic Dessert Bowl</h3>
+          <p>Sweet, creamy, and perfect after every meal.</p>
+          <strong>₹199</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="starter">
+        <img src="images/food-4.png" alt="">
+        <div>
+          <h3>Crispy Veg Bites</h3>
+          <p>Golden fried starter served with creamy dip.</p>
+          <strong>₹149</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="starter">
+        <img src="images/food-5.png" alt="">
+        <div>
+          <h3>Cheese Garlic Toast</h3>
+          <p>Crunchy bread topped with garlic butter and cheese.</p>
+          <strong>₹179</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="starter">
+        <img src="images/food-6.png" alt="">
+        <div>
+          <h3>Tandoori Paneer Tikka</h3>
+          <p>Smoky paneer cubes with capsicum and spices.</p>
+          <strong>₹249</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="main">
+        <img src="images/food-7.png" alt="">
+        <div>
+          <h3>Italian Herb Pasta</h3>
+          <p>Creamy pasta tossed with herbs and vegetables.</p>
+          <strong>₹329</strong>
+        </div>
+      </div>
+
+      <div class="menu-card" data-category="dessert">
+        <img src="images/food-8.png" alt="">
+        <div>
+          <h3>Berry Ice Cream Bowl</h3>
+          <p>Vanilla scoop, berries, chocolate drizzle, and mint.</p>
+          <strong>₹169</strong>
+        </div>
+      </div>
+    </div>
+
+    <button class="menu-arrow right" id="menuNext">›</button>
+  </div>
+</section>
+
+  <section class="features section">
+  <div class="feature-card">
+    <span>🍽️</span>
+    <h3>Digital Menu</h3>
+    <p>Display food items, prices, categories, and offers beautifully.</p>
+  </div>
+
+  <div class="feature-card">
+    <span>📲</span>
+    <h3>WhatsApp Order</h3>
+    <p>Customers can order directly through WhatsApp in one click.</p>
+  </div>
+
+  <div class="feature-card">
+    <span>🪑</span>
+    <h3>Table Booking</h3>
+    <p>Simple reservation form for customer booking requests.</p>
+  </div>
+
+  <div class="feature-card map-card">
+    <div class="map-preview"></div>
+    <span>📍</span>
+    <h3>Google Maps</h3>
+    <p>Help customers easily find your restaurant location.</p>
+    <a href="https://maps.google.com" target="_blank">View Location →</a>
+  </div>
+</section>
+
+  <section class="gallery section" id="gallery">
+    <div class="section-title">
+      <span>Gallery</span>
+      <h2>Food & Ambience</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <img src="images/food-1.png" alt="">
+      <img src="images/interior.png" alt="">
+      <img src="images/food-2.png" alt="">
+      <img src="images/chef.png" alt="">
+    </div>
+  </section>
+
+  <section class="chef section">
+    <div class="chef-content">
+      <span>Chef Special</span>
+      <h2>Crafted By Passionate Hands</h2>
+      <p>
+        Add your chef story, restaurant specialty, food philosophy,
+        and premium brand identity here.
+      </p>
+      <a href="#booking" class="btn primary">Reserve Your Seat</a>
+    </div>
+
+    <div class="chef-img">
+      <img src="images/chef.png" alt="Chef">
+    </div>
+  </section>
+
+  <section class="booking section" id="booking">
+    <div class="booking-box">
+      <div>
+        <span>Reservation</span>
+        <h2>Book Your Table Today</h2>
+        <p>Perfect for birthday dinners, family meals, dates, and celebrations.</p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Phone Number">
+        <input type="date">
+        <input type="time">
+        <button type="submit">Send Booking Request</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="reviews section">
+    <div class="section-title">
+      <span>Reviews</span>
+      <h2>What Customers Say</h2>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <p>“Beautiful ambience, amazing food, and very professional service.”</p>
+        <h4>★★★★★</h4>
+        <span>— Happy Customer</span>
+      </div>
+
+      <div class="review-card">
+        <p>“The menu and booking experience looks very premium and simple.”</p>
+        <h4>★★★★★</h4>
+        <span>— Google Review</span>
+      </div>
+
+      <div class="review-card">
+        <p>“Perfect restaurant website design for attracting customers.”</p>
+        <h4>★★★★★</h4>
+        <span>— Food Lover</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <h2>Velora Dining</h2>
+    <p>Premium Restaurant Website Template</p>
+
+    <div class="footer-buttons">
+      <a href="https://wa.me/917349753030" class="btn primary">Order on WhatsApp</a>
+      <a href="mailto:contact@business.com" class="btn secondary">Send Email</a>
+    </div>
+
+    <small>© 2026 Velora Dining. Designed by Dileep Web Studio.</small>
+  </footer>
+
+  <script src="script.js"></script>
+  <a href="https://wa.me/917349753030" class="floating-whatsapp" target="_blank">
+  Order Now
+</a>
+</body>
+</html>
