@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Product Details | Glowara Fashion</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">Glowara</div>
+
+  <nav class="nav" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="index.html#collections">Collections</a>
+    <a href="index.html#products">Products</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <span>♡</span>
+    <span>🛒</span>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<section class="product-detail-section">
+  <div class="product-detail-container">
+
+    <div class="detail-image-box">
+      <img id="productImage" src="" alt="Product Image">
+    </div>
+
+    <div class="detail-content">
+      <span class="detail-tag">Premium Collection</span>
+      <h1 id="productName"></h1>
+
+      <div class="rating">★★★★★ <span>4.8 | 126 Reviews</span></div>
+
+      <h2 id="productPrice"></h2>
+      <p id="productDescription"></p>
+
+      <div class="detail-block">
+        <h3>Select Size</h3>
+        <div class="option-row" id="sizeOptions"></div>
+      </div>
+
+      <div class="detail-block">
+        <h3>Select Color</h3>
+        <div class="option-row" id="colorOptions"></div>
+      </div>
+
+      <div class="detail-block">
+        <h3>Quantity</h3>
+        <div class="quantity-box">
+          <button onclick="changeQty(-1)">−</button>
+          <span id="quantity">1</span>
+          <button onclick="changeQty(1)">+</button>
+        </div>
+      </div>
+
+      <div class="delivery-box">
+        <p>✅ Free delivery available</p>
+        <p>✅ Easy WhatsApp order confirmation</p>
+        <p>✅ Size and color customization support</p>
+      </div>
+
+      <a id="whatsappOrder" class="btn detail-btn" target="_blank">Order on WhatsApp</a>
+    </div>
+
+  </div>
+
+  <div class="product-extra-area">
+
+    <div class="extra-grid">
+      <div class="extra-card">
+        <h3>Product Details</h3>
+        <p>Premium fabric, soft finishing, elegant fitting and modern fashion styling suitable for casual, party and daily wear.</p>
+      </div>
+
+      <div class="extra-card">
+        <h3>Size Guide</h3>
+        <p>Available in XS, S, M, L and XL. Customers can confirm exact measurements through WhatsApp before ordering.</p>
+      </div>
+
+      <div class="extra-card">
+        <h3>Delivery & Return</h3>
+        <p>Fast delivery support available. Return or exchange can be discussed based on size, color and availability.</p>
+      </div>
+    </div>
+
+    <div class="section-title related-title">
+      <span>You May Also Like</span>
+      <h2>Related Collection</h2>
+      <p>Show more items below so customers can continue browsing like Amazon or Flipkart.</p>
+    </div>
+
+    <div class="related-products" id="relatedProducts"></div>
+
+    <div class="bottom-fashion-cta">
+      <span>Need Help Choosing?</span>
+      <h2>Chat With Us Before Ordering</h2>
+      <p>Customers can ask about size, color, delivery, fabric and availability directly on WhatsApp.</p>
+      <a href="https://wa.me/917349753030" class="btn">Chat on WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Glowara Fashion. Designed by Dileep Web Studio.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
