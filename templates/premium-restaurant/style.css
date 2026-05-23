@@ -808,6 +808,35 @@ body.dark-mode .logo,
 body.dark-mode .nav-links a {
   color: #fff8ef;
 }
+/* HERO BADGE DESKTOP FIX */
+
+@media (min-width:1101px){
+
+.hero-badge{
+
+position:absolute;
+
+right:8%;
+
+top:auto;
+
+bottom:430px;
+
+transform:none;
+
+z-index:5;
+
+padding:14px 24px;
+
+}
+
+.hero-card{
+
+bottom:90px;
+
+}
+
+}
 
 /* TABLET */
 
