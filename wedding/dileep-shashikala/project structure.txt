@@ -1,0 +1,62 @@
+dileep-web-studio/
+│
+├── portfolio/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── assets/
+│
+├── wedding-invitation/
+│   │
+│   ├── dileep-shashikala/
+│   │   │
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   ├── script.js
+│   │   │
+│   │   ├── images/
+│   │   │   │
+│   │   │   ├── invitation-cover.jpg
+│   │   │   ├── hero-bg.jpg
+│   │   │   ├── groom.jpg
+│   │   │   ├── bride.jpg
+│   │   │   ├── venue.jpg
+│   │   │   │
+│   │   │   ├── family/
+│   │   │   │   ├── groom-father.jpg
+│   │   │   │   ├── groom-mother.jpg
+│   │   │   │   ├── bride-father.jpg
+│   │   │   │   └── bride-mother.jpg
+│   │   │   │
+│   │   │   ├── prewedding/
+│   │   │   │   ├── placeholder-01.jpg
+│   │   │   │   ├── placeholder-02.jpg
+│   │   │   │   └── placeholder-03.jpg
+│   │   │   │
+│   │   │   └── memories/
+│   │   │       ├── wedding-01.jpg
+│   │   │       ├── wedding-02.jpg
+│   │   │       └── wedding-03.jpg
+│   │   │
+│   │   ├── music/
+│   │   │   └── wedding-theme.mp3
+│   │   │
+│   │   ├── data/
+│   │   │   └── wedding-details.json
+│   │   │
+│   │   └── assets/
+│   │       ├── petals/
+│   │       ├── icons/
+│   │       └── animations/
+│   │
+│   └── templates/
+│       ├── royal-gold/
+│       ├── luxury-floral/
+│       ├── traditional-kannada/
+│       ├── modern-elegant/
+│       └── cinematic-dark/
+│
+├── restaurant/
+├── gym/
+├── landing-pages/
+└── ecommerce/
