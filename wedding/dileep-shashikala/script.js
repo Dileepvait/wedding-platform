@@ -167,24 +167,56 @@ const eventGrid = document.getElementById("eventGrid");
 const eventPrev = document.getElementById("eventPrev");
 const eventNext = document.getElementById("eventNext");
 
-function scrollEventCards(direction) {
+let eventIndex = 0;
+
+function getVisibleCards() {
+  if (window.innerWidth <= 480) return 1;
+  if (window.innerWidth <= 900) return 2;
+  return 4;
+}
+
+function updateEventSlider() {
   if (!eventGrid) return;
 
   const card = eventGrid.querySelector(".event-card");
   if (!card) return;
 
   const gap = parseFloat(getComputedStyle(eventGrid).gap) || 0;
-  const visibleCards = window.innerWidth <= 480 ? 1 : window.innerWidth <= 900 ? 2 : 4;
+  const moveX = eventIndex * (card.offsetWidth + gap);
 
-  const scrollAmount = (card.offsetWidth + gap) * visibleCards;
+  eventGrid.style.transform = `translateX(-${moveX}px)`;
+}
 
-  eventGrid.scrollBy({
-    left: direction * scrollAmount,
-    behavior: "smooth"
-  });
+function moveEvents(direction) {
+  if (!eventGrid) return;
+
+  const cards = eventGrid.querySelectorAll(".event-card");
+  const visible = getVisibleCards();
+  const maxIndex = Math.max(0, cards.length - visible);
+
+  eventIndex += direction;
+
+  if (eventIndex < 0) eventIndex = 0;
+  if (eventIndex > maxIndex) eventIndex = maxIndex;
+
+  updateEventSlider();
 }
 
 if (eventPrev && eventNext) {
-  eventPrev.addEventListener("click", () => scrollEventCards(-1));
-  eventNext.addEventListener("click", () => scrollEventCards(1));
+  eventPrev.addEventListener("click", () => moveEvents(-1));
+  eventNext.addEventListener("click", () => moveEvents(1));
+
+  window.addEventListener("resize", () => {
+    eventIndex = 0;
+    updateEventSlider();
+  });
+}
+
+const eventTvScreen = document.getElementById("eventTvScreen");
+const eventTvPower = document.getElementById("eventTvPower");
+
+if (eventTvScreen && eventTvPower) {
+  eventTvPower.addEventListener("click", () => {
+    eventTvScreen.classList.toggle("tv-on");
+  });
 }

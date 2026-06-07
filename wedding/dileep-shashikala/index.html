@@ -46,37 +46,19 @@
 
     <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
 
-<!-- ROYAL 3D BOOK HERO -->
-<section class="hero royal-book-hero" id="home">
-  <div class="royal-book-scene">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="sub-title">The Wedding Celebration Of</p>
 
-    <div class="royal-book" id="royalBook">
-      <div class="book-page book-left">
-        <span>ಓಂ</span>
-        <h3>Dileep</h3>
-        <p>August 15 & 16, 2026</p>
-      </div>
+    <h1>
+      Dileep<br>
+      <span>&</span><br>
+      Shashikala
+    </h1>
 
-      <div class="book-page book-right">
-        <span>♥</span>
-        <h3>Shashikala</h3>
-        <p>Sri Revanna Siddeshwara Betta</p>
-      </div>
-
-      <div class="book-cover-front">
-        <span class="book-om">ಓಂ</span>
-        <h1>Dileep<br><em>&</em><br>Shashikala</h1>
-        <p>Tap To Open</p>
-      </div>
-    </div>
-
-    <div class="royal-hero-text">
-      <p class="sub-title">The Wedding Celebration Of</p>
-      <h2>Dileep & Shashikala</h2>
-      <p class="date">August 15 & 16, 2026</p>
-      <p class="venue">Sri Revanna Siddeshwara Betta, Halkirike</p>
-    </div>
-
+    <p class="date">August 15 & 16, 2026</p>
+    <p class="venue">Sri Revanna Siddeshwara Betta, Halkirike</p>
   </div>
 </section>
 
@@ -133,13 +115,26 @@
   <div class="event-slider-wrap">
     <button class="event-nav event-prev" id="eventPrev">‹</button>
 
-    <div class="event-grid" id="eventGrid">
-      <div class="event-card"><h3>Haladhi</h3><p>August 15, 2026</p><span>Morning</span></div>
-      <div class="event-card"><h3>Reception</h3><p>August 15, 2026</p><span>Evening</span></div>
-      <div class="event-card"><h3>Muhurtha</h3><p>August 16, 2026</p><span>Early Morning</span></div>
-      <div class="event-card"><h3>Wedding Ceremony</h3><p>August 16, 2026</p><span>Morning</span></div>
-      <div class="event-card"><h3>Breakfast</h3><p>August 16, 2026</p><span>Morning</span></div>
-      <div class="event-card"><h3>Lunch</h3><p>August 16, 2026</p><span>Afternoon</span></div>
+    <div class="event-tv-frame">
+      <div class="event-tv-screen" id="eventTvScreen">
+
+        <div class="event-tv-off" id="eventTvOff">
+          <span>Wedding Events</span>
+          <button id="eventTvPower">ON / OFF</button>
+        </div>
+
+        <div class="event-viewport">
+          <div class="event-grid" id="eventGrid">
+            <div class="event-card"><h3>Haladhi</h3><p>August 15, 2026</p><span>Morning</span></div>
+            <div class="event-card"><h3>Reception</h3><p>August 15, 2026</p><span>Evening</span></div>
+            <div class="event-card"><h3>Muhurtha</h3><p>August 16, 2026</p><span>Early Morning</span></div>
+            <div class="event-card"><h3>Wedding Ceremony</h3><p>August 16, 2026</p><span>Morning</span></div>
+            <div class="event-card"><h3>Breakfast</h3><p>August 16, 2026</p><span>Morning</span></div>
+            <div class="event-card"><h3>Lunch</h3><p>August 16, 2026</p><span>Afternoon</span></div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <button class="event-nav event-next" id="eventNext">›</button>
